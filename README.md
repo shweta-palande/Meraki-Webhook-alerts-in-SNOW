@@ -42,11 +42,18 @@ Add a new receiver with the following details:
 
 Click Save, and then click "send Test" to ensure the setup is right. You should see a "webhook test was successful!" message
 
+![meraki_webhook_receiver](https://github.com/user-attachments/assets/70c48bcf-35f1-499a-9c82-b9fca18eefac)
+
+For more details, please refer to our Webhook integration guide - https://developer.cisco.com/meraki/webhooks/servicenow-included/#servicenow
+
 ## 3. Setting up MT webhook alerts
 In order to create incidents in ServiceNow for any webhook alerts coming from MT sensors, In your Meraki Dashboard navigate to
 Sensors > AlertProfiles
 configure the alerting thresholds per your requirement, and add the newly configured ServiceNow webhook receiver in Notfication recipients
 
 ![MT_alert_profile](https://github.com/user-attachments/assets/db208207-bda0-4ec6-ae07-812fd5290f1b)
+
+## 4. Testing all the incidents 
+
 
 
