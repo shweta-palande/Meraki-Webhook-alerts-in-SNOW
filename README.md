@@ -32,13 +32,13 @@ Save the user ID and password in a safe place. These credentials will be require
 
 ## 2. Configure Webhook receiver in Meraki Dashboard
 
-In the Meraki Dashboard, navigate to Organization > API & Webhooks > Webhooks > Receivers
+In the Meraki Dashboard, navigate to Organization > API & Webhooks > Webhooks > Receivers.
 Add a new receiver with the following details:
 
 * name: Any name that you want to give to your webhook receiver
 * httpServer URL: https://venXXXX.service-now.com/api/x_caci_sg_meraki/sgmeraki_device_alerts (Replace venXXXX with your ServiceNow instance)
 * sharedSecret: username:password (This is your user ID & password created in step 1 above)
-* Template: select the built in template for ServiceNow
+* Template: select the included template for ServiceNow
 
 Click Save, and then click "send Test" to ensure the setup is right. You should see a "webhook test was successful!" message
 
@@ -48,8 +48,8 @@ For more details, please refer to our Webhook integration guide - https://develo
 
 ## 3. Setting up MT webhook alerts
 In order to create incidents in ServiceNow for any webhook alerts coming from MT sensors, In your Meraki Dashboard navigate to
-Sensors > AlertProfiles
-configure the alerting thresholds per your requirement, and add the newly configured ServiceNow webhook receiver in Notfication recipients
+Sensors > AlertProfiles.
+Configure the alerting thresholds per your requirement, and add the newly configured ServiceNow webhook receiver in Notfication recipients
 
 ![MT_alert_profile](https://github.com/user-attachments/assets/db208207-bda0-4ec6-ae07-812fd5290f1b)
 
